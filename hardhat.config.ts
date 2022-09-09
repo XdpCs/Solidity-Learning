@@ -1,9 +1,10 @@
-import { HardhatUserConfig } from "hardhat/config";
+import {HardhatUserConfig} from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-require("@nomiclabs/hardhat-waffle")
+
+require("@nomicfoundation/hardhat-chai-matchers")
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.9",
+    solidity: "0.8.9",
 };
 
 export default config;
