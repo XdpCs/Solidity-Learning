@@ -7,6 +7,7 @@
 // 编译器不会验证许可证是否属于SPDX版权许可列表,但它会在 bytecode metadata 中包含提供的字符串。
 pragma solidity ^0.8.0;
 // 源文件将不允许低于0.8.0版本并且不高于0.9.0的编译器编译,^表示高于
+// 任何一个程序教学，开头都会教你如何写hello world，我也不例外
 contract HelloWorld {
     // contract 声明了一个合约名字
     string public greet = "Hello World!";
