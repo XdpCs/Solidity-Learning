@@ -14,3 +14,4 @@
 * [4-变量](./contracts/Variables.sol)
 * [5-常量](./contracts/Constants.sol)
 * [6-不可变变量](./contracts/Immutable.sol)
+* [7-读取和写入状态变量](./contracts/SimpleStorage.sol)
