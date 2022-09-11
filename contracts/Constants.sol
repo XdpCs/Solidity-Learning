@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 // 常量是不可修改的变量
-// 它们的值是硬编码的，使用常量可以节省gas成本
+// 它们的值是硬编码的，使用常量可以节省gas成本,还可以提高合约安全性
 contract Constants {
     // 大写常量变量的名称是一种编码习惯
     // 常量必须在声明的时候，进行初始化，之后便不能再改变了
