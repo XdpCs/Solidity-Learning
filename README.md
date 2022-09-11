@@ -12,3 +12,4 @@
 * [2-第一个App](./contracts/Counter.sol)
 * [3-原始数据类型](./contracts/Primitives.sol)
 * [4-变量](./contracts/Variables.sol)
+* [5-常量](./contracts/Constants.sol)
