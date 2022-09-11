@@ -13,3 +13,4 @@
 * [3-原始数据类型](./contracts/Primitives.sol)
 * [4-变量](./contracts/Variables.sol)
 * [5-常量](./contracts/Constants.sol)
+* [6-不可变变量](./contracts/Immutable.sol)
