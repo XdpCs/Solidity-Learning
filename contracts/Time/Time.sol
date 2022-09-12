@@ -12,14 +12,14 @@ pragma solidity ^0.8.0;
 // 秒为缺省时间单位
 
 contract Time {
-    // 这些单位是不能直接用在变量后面
-    // 想要使用，必须将输入变量换算为时间
     uint public start;
     bool public isTimeOut;
     constructor(){
         start = block.timestamp;
     }
 
+    // 这些单位是不能直接用在变量后面
+    // 想要使用，必须将输入变量换算为时间
     function judge() public {
         if (block.timestamp >= start + 1 seconds)
             isTimeOut = true;
