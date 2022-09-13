@@ -8,6 +8,10 @@
 
 前期由于javascript和typescript还在巩固学习中，hardhat的部署脚本和测试脚本会在后期补齐。前期是采用remix进行部署。
 
+每天将更新3-4个知识点
+
+### 基础知识
+
 * [1-你好，世界](./contracts/HelloWorld/HelloWorld.sol)
 * [2-第一个App](./contracts/FirstApp/Counter.sol)
 * [3-原始数据类型](./contracts/Primitives/Primitives.sol)
@@ -17,3 +21,4 @@
 * [7-读取和写入状态变量](./contracts/ReadAndWriteState/SimpleStorage.sol)
 * [8-以太币单位](./contracts/EtherAndWei/EtherUnits.sol)
 * [9-时间单位](./contracts/Time/Time.sol)
+* [10-Gas和Gas价格](./contracts/GasAndGasPrice/Gas.sol)
