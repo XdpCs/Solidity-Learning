@@ -22,5 +22,5 @@
 * [7-读取和写入状态变量](./contracts/ReadAndWriteState/SimpleStorage.sol)
 * [8-以太币单位](./contracts/EtherAndWei/EtherUnits.sol)
 * [9-时间单位](./contracts/Time/Time.md)
-* [10-Gas和Gas价格](./contracts/GasAndGasPrice/Gas.md)
+* [10-Gas和Gas价格](./contracts/GasAndGasPrice/GasAndGasPrice.md)
 * [11-映射](./contracts/Mapping/Mapping.md)
