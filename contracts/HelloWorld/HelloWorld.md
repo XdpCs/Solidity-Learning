@@ -47,3 +47,8 @@ contract HelloWorld
 ```
 
 * 声明了一个string变量，并且可见性是public
+
+## 链接
+
+* 上一节：[0-序言](../Preface/Preface.md)
+* 下一节：[2-第一个App](../FirstApp/FirstApp.md)
