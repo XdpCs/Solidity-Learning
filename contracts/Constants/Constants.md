@@ -9,6 +9,8 @@
 
 [例子](../Constants/Constants.sol)
 
+该例子是常量的使用方法的例子
+
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
