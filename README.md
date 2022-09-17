@@ -17,7 +17,7 @@
 * [2-第一个App](./contracts/FirstApp/FirstApp.md)
 * [3-原始数据类型](./contracts/Primitives/Primitives.sol)
 * [4-变量](./contracts/Variables/Variables.sol)
-* [5-常量](./contracts/Constants/Constants.sol)
+* [5-常量](./contracts/Constants/Constants.md)
 * [6-不可变变量](./contracts/Immutable/Immutable.md)
 * [7-读取和写入状态变量](./contracts/ReadAndWriteState/ReadAndWriteState.md)
 * [8-以太币单位](./contracts/EtherAndWei/EtherAndWei.md)
