@@ -55,7 +55,7 @@
 
 ## 例子
 
-[例子](../Primitives/Primitives.sol)
+[例子](./Primitives.sol)
 
 该例子是原始类型使用的例子
 
