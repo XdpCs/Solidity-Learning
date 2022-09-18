@@ -2,11 +2,11 @@
 
 ## 基础知识
 
-* 我将介绍四种在Solidity中可用的原始数据类型
+* 我将介绍四种在Solidity中可用的原始数据类型，它们都是值类型
     * bool
     * uint、int
     * address
-    * byte
+    * bytes(定长数组)
 * 布尔型(bool)
     * 布尔型的取值只有两种：true和false
     * 布尔型的运算符包括：
@@ -38,20 +38,20 @@
     * payable的地址拥有balance和transfer()
         * balance用于查询余额
         * transfer()用于转账
-* 字节类型(byte)
-    * byte表示一个字节序列
+* 字节类型(bytes)
+    * bytes表示一个字节序列
     * Solidity 提供了两种字节类型：
         * 固定大小的字节数组
-            * 固定大小的字节数组属于原始数据类型
+            * 固定大小的字节数组属于原始数据类型、值类型
             * 固定大小的字节数组存储数据会更节省gas费用
         * 动态大小的字节数组
-            * 动态大小的字节数组不属于此类型，在后面会讲
+            * 动态大小的字节数组不属于此类型、值类型，在后面会讲
 * 默认值
     * 未赋值的变量有一个默认值
     * 布尔型(bool)为false
     * 整数型(uint、int)为0
     * 地址类型(address)为0x0000000000000000000000000000000000000000
-    * 字节类型(byte)为0
+    * 字节类型(bytes)为0
 
 ## 例子
 
@@ -199,7 +199,7 @@ function getEth() public {
     bytes1 public a3 = a1[0]; // [10110101]
 ```
 
-* 字节类型(byte)使用的例子
+* 字节类型(bytes)使用的例子
 
 ```solidity
     bool public defaultBoo; // false
