@@ -14,6 +14,7 @@
     * 映射Mapping在实际的初始化过程中，创建每个可能的key，并将其映射到字节形式全是零的值:一个类型的默认值
     * 在映射Mapping中，实际上并不存储key的值，而是存储它的keccak256哈希值，从而便于查询实际的值
     * 映射Mapping中不存储length的信息
+* 映射Mapping默认值是所有元素都为其默认值
 
 ## 例子
 
@@ -135,3 +136,4 @@ function remove(address _addr, uint _i) public {
 ## 链接
 
 * 上一节：[10-Gas和Gas价格](../GasAndGasPrice/GasAndGasPrice.md)
+* 下一节：[11-数组](../Array/Array.md)
