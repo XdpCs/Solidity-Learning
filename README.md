@@ -8,14 +8,14 @@
 
 前期由于javascript和typescript还在巩固学习中，hardhat的部署脚本和测试脚本会在后期补齐。前期是采用remix进行部署。
 
-每天将更新3-4个知识点
+每天将更新2-3个知识点
 
 ### 基础知识
 
 * [0-序言](./contracts/Preface/Preface.md)
 * [1-你好，世界](./contracts/HelloWorld/HelloWorld.md)
 * [2-第一个App](./contracts/FirstApp/FirstApp.md)
-* [3-原始数据类型](./contracts/Primitives/Primitives.sol)
+* [3-原始数据类型](./contracts/Primitives/Primitives.md)
 * [4-变量](./contracts/Variables/Variables.md)
 * [5-常量](./contracts/Constants/Constants.md)
 * [6-不可变变量](./contracts/Immutable/Immutable.md)
