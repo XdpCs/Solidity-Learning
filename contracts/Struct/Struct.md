@@ -2,7 +2,7 @@
 
 ## 基础知识
 
-* 你可以通过结构体定义自己的类型
+* 你可以通过结构体(struct)定义自己的类型
 * 结构体(struct)可以将相关数据分组在一起
 * 结构体(struct)可以声明在合约外面并从其他合约中导入
 
@@ -10,7 +10,7 @@
 
 [例子1](./Todos.sol)
 
-该例子是通过使用结构体存储待办事项的例子
+该例子是通过使用结构体(struct)存储待办事项的例子
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -95,13 +95,13 @@ struct Todo {
 }
 ```
 
-* 待办事项的结构体
+* 待办事项的结构体(struct)
 
 ```solidity
 Todo[] public todos;
 ```
 
-* Todo结构体数组
+* Todo结构体(struct)数组
 
 ```solidity
     function createOneWay(string memory _text) public {
@@ -119,10 +119,10 @@ Todo[] public todos;
     }
 ```
 
-* 三种方法初始化一个结构体
+* 三种方法初始化一个结构体(struct)
     * function createOneWay(string memory _text)像函数调用一样初始化
     * function createTwoWay(string memory _text)像键值对映射一样初始化
-    * function createThreeWay(string memory _text)，初始化一个结构体变量，然后对其进行赋值
+    * function createThreeWay(string memory _text)，初始化一个结构体(struct)变量，然后对其进行赋值
 
 ```solidity
 function get(uint _index) public view returns (string memory text, bool completed){
@@ -169,7 +169,7 @@ pragma solidity ^0.8.0;
 import "./StructDeclaration.sol";
 ```
 
-* 导入结构体文件
+* 导入结构体(struct)文件
 
 ## 链接
 
