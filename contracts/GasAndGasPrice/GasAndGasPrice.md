@@ -51,4 +51,4 @@ contract Gas {
 ## 链接
 
 * 上一节：[9-时间单位](../Time/Time.md)
-* 下一节：[11-映射](../Mapping/Mapping.md)
+* 下一节：[11-枚举](../EnumDemo/Enum.md)
