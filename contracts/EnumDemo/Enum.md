@@ -5,7 +5,7 @@
 * Solidity支持可枚举，它们对于建模选择和跟踪状态很有用
 * 枚举(enum)可以声明在合约外面并从其他合约中导入
 * 枚举(enum)主要通过`uint`分配名称，名称从`0`开始
-* 显式的和`uint`进行相互转换，并且会检查所转换的无符号整数是否在枚举长度范围内
+* 枚举(enum)可以显式的和`uint`进行相互转换，并且会检查所转换的无符号整数是否在枚举长度范围内
 
 ## 例子
 
@@ -107,7 +107,7 @@ pragma solidity ^0.8.0;
 }
 ```
 
-* 枚举表示发货状态
+* 枚举(enum)表示发货状态
 
 ```solidity
 Status public status;
@@ -135,7 +135,7 @@ function set(Status _status) public {
 }
 ```
 
-* 通过输入uint类型数字更新status变量,若大于枚举(enum)范围会交易失败
+* 通过输入uint类型数字更新status变量,若大于枚举(enum)范围,会交易失败
 
 ```solidity
 function cancel() public {
@@ -205,7 +205,7 @@ pragma solidity ^0.8.0;
 import "./EnumDeclaration.sol";
 ```
 
-* 导入枚举文件
+* 导入枚举(enum)文件
 
 ## 链接
 
