@@ -13,7 +13,7 @@
 
 [例子](./Loop.sol)
 
-* 该例子是for`,`while`和`do while`循环及`continue`、`break`使用的例子
+* 该例子是`for`,`while`和`do while`循环及`continue`、`break`使用的例子
 
 ```solidity
 // SPDX-License-Identifier: MIT
