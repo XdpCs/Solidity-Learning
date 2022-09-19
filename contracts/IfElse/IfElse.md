@@ -69,7 +69,7 @@ function foo(uint x) public pure returns (uint){
     }
 ```
 
-* 通过三元运算符，对if/else进行简写
+* 通过三元运算符，对`if/else`进行简写
 
 ## 链接
 
