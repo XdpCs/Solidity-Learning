@@ -1,6 +1,9 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 contract ArrayReplaceFromEnd {
+    uint[] public arr;
+
     function remove(uint index) public {
         arr[index] = arr[arr.length - 1];
         arr.pop();
