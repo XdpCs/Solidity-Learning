@@ -33,5 +33,6 @@
 * [16-数组](./contracts/Array/Array.md)
 * [17-字符串](./contracts/String/String.md)
 * [18-数据存储位置](./contracts/DataLocations/DataLocations.md)
+* [19-函数](contracts/FunctionInputOutputReturn/Function.md)
 
 ### 创作不易，给个🌟吧
