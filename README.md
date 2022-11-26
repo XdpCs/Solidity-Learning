@@ -5,13 +5,6 @@
 * [1-hardhat快速入门](./note/hardhat/1-hardhatQuickStart.md)
 
 ## Solidity 笔记
-
-前期由于javascript和typescript还在巩固学习中，hardhat的部署脚本和测试脚本会在后期补齐。前期是采用remix进行部署。
-
-每天将更新2-3个知识点
-
-明天将更新16、17、18
-
 ### 基础知识
 
 * [0-序言](./contracts/Preface/Preface.md)
