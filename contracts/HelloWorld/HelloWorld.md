@@ -43,7 +43,7 @@ contract HelloWorld
 * `contract`声明了一个合约名字，名字叫`HelloWorld`
 
 ```solidity
- string public greet = "Hello World!";
+    string public greet = "Hello World!";
 ```
 
 * 声明了一个`string`变量，并且可见性是`public`
