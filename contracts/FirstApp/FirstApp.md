@@ -32,7 +32,7 @@ contract Counter {
 ## 程序解析
 
 ```solidity
-    uint public count;
+uint public count;
 ```
 
 * 存储在链上合约中的`count`变量,用`public`修饰可见性，在后面可以知道，`public`修饰的变量，会自动生成一个get函数
