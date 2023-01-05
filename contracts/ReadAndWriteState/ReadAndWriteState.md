@@ -34,7 +34,7 @@ contract SimpleStorage {
 uint public num;
 ```
 
-* 存储一个数字的状态变量
+* 存储一个`uint`的状态变量
 
 ```solidity
  function set(uint _num) public {
@@ -50,7 +50,7 @@ function get() public view returns (uint) {
 }
 ```
 
-* 读取状态变量不需要发送一笔交易
+* 读取状态变量时，不需要发送一笔交易
 
 ## 链接
 
