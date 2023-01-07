@@ -2,18 +2,18 @@
 
 ## 基础知识
 
-* solidity中自带时间单位，它们分别是
-    - seconds
-    - minutes
-    - hours
-    - days
-    - weeks
+* `Solidity`中自带时间单位，它们分别是
+    - `seconds`
+    - `minutes`
+    - `hours`
+    - `days`
+    - `weeks`
 * 基本换算关系如下：
-    - 1 == 1 seconds
-    - 1 minutes == 60 seconds
-    - 1 hours == 60 minutes
-    - 1 days == 24 hours
-    - 1 weeks == 7 days
+    - `1` == `1 seconds`
+    - `1 minutes` == `60 seconds`
+    - `1 hours` == `60 minutes`
+    - `1 days` == `24 hours`
+    - `1 weeks` == `7 days`
 * 秒为缺省时间单位
 
 ## 例子
