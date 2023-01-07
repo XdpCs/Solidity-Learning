@@ -22,6 +22,8 @@
 
 ## 例子
 
+[例子](./EtherUnits.sol)
+
 该例子是测试以太币的单位换算
 
 ```solidity
