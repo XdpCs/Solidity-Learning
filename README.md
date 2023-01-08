@@ -1,15 +1,18 @@
 # Solidity Learning
-![GitHub watchers](https://img.shields.io/github/watchers/XdpCs/Solidity-Learning?style=social) 
-![GitHub stars](https://img.shields.io/github/stars/XdpCs/Solidity-Learning?style=social) 
-![GitHub forks](https://img.shields.io/github/forks/XdpCs/Solidity-Learning?style=social) 
-![GitHub last commit](https://img.shields.io/github/last-commit/XdpCs/Solidity-Learning?style=flat-square) 
-![GitHub repo size](https://img.shields.io/github/repo-size/XdpCs/Solidity-Learning?style=flat-square) 
+
+![GitHub watchers](https://img.shields.io/github/watchers/XdpCs/Solidity-Learning?style=social)
+![GitHub stars](https://img.shields.io/github/stars/XdpCs/Solidity-Learning?style=social)
+![GitHub forks](https://img.shields.io/github/forks/XdpCs/Solidity-Learning?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/XdpCs/Solidity-Learning?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/XdpCs/Solidity-Learning?style=flat-square)
 ![GitHub license](https://img.shields.io/github/license/XdpCs/Solidity-Learning?style=flat-square)
+
 ## Hardhat 笔记
 
 * [1-hardhat快速入门](./note/hardhat/1-hardhatQuickStart.md)
 
 ## Solidity 笔记
+
 ### 基础知识
 
 * [0-序言](./contracts/Preface/Preface.md)
