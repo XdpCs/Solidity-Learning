@@ -37,3 +37,7 @@
 * [19-函数](contracts/FunctionInputOutputReturn/Function.md)
 
 ### 创作不易，给个🌟吧
+
+## License
+
+This project is under MIT License. See the [LICENSE](LICENSE) file for the full license text.
