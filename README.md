@@ -1,4 +1,4 @@
-# Solidity Learning
+# Solidity-Learning
 
 ![GitHub watchers](https://img.shields.io/github/watchers/XdpCs/Solidity-Learning?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/XdpCs/Solidity-Learning?style=social)
@@ -36,8 +36,12 @@
 * [18-数据存储位置](./contracts/DataLocations/DataLocations.md)
 * [19-函数](contracts/FunctionInputOutputReturn/Function.md)
 
-### 创作不易，给个🌟吧
+## 参考
+
+* [solidity-by-example](https://github.com/solidity-by-example/solidity-by-example.github.io)
+* [Solidity中文文档](https://docs.soliditylang.org/zh/latest)
 
 ## License
 
-This project is under MIT License. See the [LICENSE](LICENSE) file for the full license text.
+Solidity-Learning is under the [MIT](LICENSE). Please refer to LICENSE for more information.
+
