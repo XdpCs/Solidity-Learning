@@ -53,7 +53,7 @@ string public greet = "Hello World!";
 
 * 声明了一个`string`变量，并且可见性是`public`
 
-## 参考资料
+## 参考资料推荐
 
 * [Solidity中文文档](https://docs.soliditylang.org/zh/latest)
 
