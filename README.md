@@ -38,7 +38,8 @@
 
 ## 参考
 
-部分例子参考[solidity-by-example](https://github.com/solidity-by-example/solidity-by-example.github.io)
+* [solidity-by-example](https://github.com/solidity-by-example/solidity-by-example.github.io)
+* [Solidity中文文档](https://docs.soliditylang.org/zh/latest)
 
 ## License
 
