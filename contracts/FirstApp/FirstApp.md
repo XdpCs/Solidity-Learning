@@ -1,6 +1,6 @@
 # 2-第一个App
 
-这是一个简单的计数器合约,在合约中存储一个数，你可以增加和减少此数
+这是一个计数器合约,在合约中存储一个数,可以对这个数进行增加和减少操作
 
 ## 例子
 
@@ -10,7 +10,7 @@
 
 ```solidity
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.17;
 
 contract Counter {
     uint public count;
@@ -35,7 +35,7 @@ contract Counter {
 uint public count;
 ```
 
-* 存储在链上合约中的`count`变量,用`public`修饰可见性，在后面可以知道，`public`修饰的变量，会自动生成一个get函数
+* `count`是存储在链上合约中的变量,用`public`修饰可见性,在后面的文章中可以知道，`public`修饰的变量，会自动生成一个`get`函数
 
 ```solidity
 function getCount() public view returns (uint) {
@@ -43,7 +43,7 @@ function getCount() public view returns (uint) {
 }
 ```
 
-* 该函数用于获取当前`count`的值，其实此函数是多此一举hhh
+* 该函数用于获取当前`count`变量的值，其实此函数是多此一举hhh
 
 ```solidity
 function inc() public {
@@ -51,7 +51,7 @@ function inc() public {
 }
 ```
 
-* 该函数用于增加`count`的值
+* 该函数用于增加`count`变量的值
 
 ```solidity
 function dec() public {
@@ -59,8 +59,9 @@ function dec() public {
 }
 ```
 
-* 该函数用于减少`count`的值，但是在刚开始部署合约的时候，不能先调用此函数
+* 该函数用于减少`count`变量的值，但是在部署合约完成后，不能先调用此函数
 * 因为在`Solidity 8.0`版本之后，如果溢出，会将交易回滚，显示交易失败
+* 溢出的问题，会在[3-原始数据类型](../Primitives/Primitives.md)中，讲解数值变量的范围
 
 ## 链接
 
