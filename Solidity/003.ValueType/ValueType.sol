@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
-contract Primitives {
+contract ValueType {
     bool public b = false;
     bool public b1 = 1118 > 1114; // true
     bool public b2 = 1118 >= 1114; // true
@@ -49,9 +49,17 @@ contract Primitives {
     bytes2 public a2 = 0xb556; // [1011010101010110]
     bytes1 public a3 = a1[0]; // [10110101]
 
+    enum XdpCs {Alan, Xu, love, fyy}
+    XdpCs public xdpCs;
+
+    function SetXdp(XdpCs x) public {
+        xdpCs = x;
+    }
+
     bool public defaultBoo; // false
     uint public defaultUint; // 0
     int public defaultInt; // 0
     address public defaultAddr; // 0x0000000000000000000000000000000000000000
     bytes2 public defaultBytes; // 0x0000
+    XdpCs public defaultEnum; // 0
 }

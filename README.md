@@ -11,13 +11,13 @@
 
 ### 基础知识
 
-* [0-序言](./Solidity/000.Preface/Preface.md)
-* [1-你好，世界](./Solidity/001.HelloWorld/HelloWorld.md)
-* [2-第一个App](./Solidity/002.FirstApp/FirstApp.md)
-* [3-原始数据类型](./Solidity/Primitives/Primitives.md)
-* [4-变量](./Solidity/Variables/Variables.md)
-* [5-常量](./Solidity/Constants/Constants.md)
-* [6-不可变变量](./Solidity/Immutable/Immutable.md)
+* [0-序言](./Solidity/000.Preface/README.md)
+* [1-你好，世界](./Solidity/001.HelloWorld/README.md)
+* [2-第一个App](./Solidity/002.FirstApp/README.md)
+* [3-值类型](./Solidity/003.ValueType/README.md)
+* [4-变量](./Solidity/004.Variables/README.md)
+* [5-常量](./Solidity/005.Constants/README.md)
+* [6-不可变变量](./Solidity/006.Immutable/README.md)
 * [7-读取和写入状态变量](./Solidity/ReadAndWriteState/ReadAndWriteState.md)
 * [8-以太币单位](./Solidity/EtherAndWei/EtherAndWei.md)
 * [9-时间单位](./Solidity/Time/Time.md)

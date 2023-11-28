@@ -1,4 +1,4 @@
-# 4-变量
+# 004-变量
 
 ## 基础知识
 
@@ -31,7 +31,7 @@
 
 ## 例子
 
-[例子](../Variables/Variables.sol)
+[例子](../004.Variables/Variables.sol)
 
 该例子是局部变量、状态变量和全局变量使用的例子
 
@@ -93,5 +93,5 @@ timestamp = block.timestamp;
 
 ## 链接
 
-* 上一页：[3-原始数据类型](../Primitives/Primitives.md)
-* 下一页：[5-常量](../Constants/Constants.md)
+* 上一页：[3-原始数据类型](../003.ValueType/README.md)
+* 下一页：[5-常量](../005.Constants/README.md)

@@ -1,4 +1,4 @@
-# 1-你好，世界
+# 001-你好，世界
 
 任何一个程序教学，开头都会教你如何写`Hello World`，我也不例外
 
@@ -51,5 +51,5 @@ string public greet = "Hello World!";
 
 ## 链接
 
-* 上一节：[0-序言](../000.Preface/Preface.md)
-* 下一节：[2-第一个App](../002.FirstApp/FirstApp.md)
+* 上一节：[0-序言](../000.Preface/README.md)
+* 下一节：[2-第一个App](../002.FirstApp/README.md)
