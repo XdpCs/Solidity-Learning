@@ -46,7 +46,7 @@ function getCount() public view returns (uint) {
 * 该函数用于获取当前`count`的值，其实此函数是多此一举hhh
 
 ```solidity
- function inc() public {
+function inc() public {
     count++;
 }
 ```
@@ -64,5 +64,5 @@ function dec() public {
 
 ## 链接
 
-* 上一节：[1-你好，世界](../001.HelloWorld/HelloWorld.md)
-* 下一节：[3-原始数据类型](../Primitives/Primitives.md)
+* 上一节：[1-你好，世界](../001.HelloWorld/README.md)
+* 下一节：[3-原始数据类型](../003.ValueType/README.md)
