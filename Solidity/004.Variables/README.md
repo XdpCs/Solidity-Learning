@@ -41,7 +41,7 @@
 
 ## 例子
 
-[例子](../004.Variables/Variables.sol)
+[例子](./Variables.sol)
 
 该例子是局部变量、状态变量和全局变量使用的例子
 
