@@ -161,5 +161,5 @@ function getGasLimit() view public returns (uint) {
 
 ## 链接
 
-* 上一页：[3-原始数据类型](../003.ValueType/README.md)
-* 下一页：[5-常量](../005.Constants/README.md)
+* 上一节：[3-原始数据类型](../003.ValueType/README.md)
+* 下一节：[5-常量](../005.Constants/README.md)
