@@ -22,6 +22,8 @@
 
 ## 例子
 
+[例子](./EtherUnits.sol)
+
 该例子是测试了以太币的单位换算
 
 ```solidity
@@ -66,3 +68,4 @@ bool public isOneGwei = 1 gwei == 1e9;
 ## 链接
 
 * 上一节：[006-不可变变量](../006.Immutable/README.md)
+* 下一节：[008-时间单位](../008.TimeUnits/README.md)
