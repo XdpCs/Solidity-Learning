@@ -64,5 +64,5 @@ function dec() public {
 
 ## 链接
 
-* 上一节：[1-你好，世界](../001.HelloWorld/README.md)
-* 下一节：[3-原始数据类型](../003.ValueType/README.md)
+* 上一节：[001-你好，世界](../001.HelloWorld/README.md)
+* 下一节：[003-原始数据类型](../003.ValueType/README.md)

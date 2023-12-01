@@ -1,4 +1,4 @@
-# 6-不可变变量
+# 006-不可变变量
 
 ## 基础知识
 
@@ -54,4 +54,5 @@ constructor(uint _myUint){
 
 ## 链接
 
-* 上一页：[5-常量](../005.Constants/README.md)
+* 上一页：[005-常量](../005.Constants/README.md)
+* 下一页：[007-以太币单位](../007.EtherUnits/README.md)

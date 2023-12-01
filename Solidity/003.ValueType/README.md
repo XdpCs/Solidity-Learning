@@ -267,5 +267,5 @@ XdpCs public defaultEnum; // 0
 
 ## 链接
 
-* 上一节：[2-第一个App](../002.FirstApp/README.md)
-* 下一节：[4-变量](../004.Variables/README.md)
+* 上一节：[002-第一个App](../002.FirstApp/README.md)
+* 下一节：[004-变量](../004.Variables/README.md)

@@ -43,5 +43,5 @@ bytes32 public constant MY_KE256 = keccak256(abi.encodePacked("100"));
 
 ## 链接
 
-* 上一节：[4-变量](../004.Variables/README.md)
-* 下一节：[6-不可变变量](../006.Immutable/README.md)
+* 上一节：[004-变量](../004.Variables/README.md)
+* 下一节：[006-不可变变量](../006.Immutable/README.md)
