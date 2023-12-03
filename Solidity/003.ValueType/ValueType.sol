@@ -49,11 +49,52 @@ contract ValueType {
     bytes2 public a2 = 0xb556; // [1011010101010110]
     bytes1 public a3 = a1[0]; // [10110101]
 
-    enum XdpCs {Alan, Xu, love, fyy}
-    XdpCs public xdpCs;
+    enum Status{
+        Pending,
+        Shipped,
+        Accepted,
+        Rejected,
+        Canceled
+    }
+    Status public status;
+    Status public maxEnum = type(Status).max;
+    Status public minEnum = type(Status).min;
 
-    function SetXdp(XdpCs x) public {
-        xdpCs = x;
+    function get() public view returns (Status){
+        return status;
+    }
+
+    function set(Status _status) public {
+        status = _status;
+    }
+
+    function cancel() public {
+        status = Status.Canceled;
+    }
+
+    function reject() public {
+        status = Status.Rejected;
+    }
+
+    function accept() public {
+        status = Status.Accepted;
+    }
+
+    function ship() public {
+        status = Status.Shipped;
+    }
+
+    function pending() public {
+        status = Status.Pending;
+    }
+
+    function reset() public {
+        delete status;
+        delete a1;
+        delete b1;
+        delete u8;
+        delete i8;
+        delete addr;
     }
 
     bool public defaultBoo; // false
@@ -61,5 +102,5 @@ contract ValueType {
     int public defaultInt; // 0
     address public defaultAddr; // 0x0000000000000000000000000000000000000000
     bytes2 public defaultBytes; // 0x0000
-    XdpCs public defaultEnum; // 0
+    Status public defaultEnum; // 0
 }

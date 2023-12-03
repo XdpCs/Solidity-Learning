@@ -66,17 +66,19 @@
   * 比较运算符：<=， <， ==， !=， >=， >
   * 位运算符： &， |， ^ （按位异或）， ~ （按位取反）
   * 移位运算符： << （左移位）， >> （右移位）
-  * 索引访问： 如果`x`是`bytesI`类型，那么当`0 <= k < I`时，`x[k]`返回第`k`个字节（只读)
+  * 索引访问： 如果`x`是`bytesI`类型，那么当`0 <= k < I`时，`x[k]`返回第`k`个字节（只读）
 * 移位运算符以无符号的整数类型作为右操作数（但返回左操作数的类型），它表示要移位的位数。有符号类型的移位将产生一个编译错误
 * 成员变量：
   * `.length`: 这个字节数组的长度（只读）
 
 ### 枚举类型(enum)
 
-* 枚举类型用于表示一组有限的值
+* 枚举类型用于表示一组有限的值，它们对于建模选择和跟踪状态很有用
 * 枚举类型的声明：
   * `enum` 枚举名称 { 枚举值1, 枚举值2, ... }
   * 枚举值的类型是`uint8`，从`0`开始递增，不能超过`256`个
+* 枚举可以声明在合约外面并从其他合约中导入
+* 枚举可以显式的和`uint8`进行相互转换，并且会检查所转换的无符号整数是否在枚举长度范围内
 
 ### 默认值
 
@@ -145,11 +147,52 @@ contract ValueType {
     bytes2 public a2 = 0xb556; // [1011010101010110]
     bytes1 public a3 = a1[0]; // [10110101]
 
-    enum XdpCs {Alan, Xu, love, fyy}
-    XdpCs public xdpCs;
+    enum Status{
+        Pending,
+        Shipped,
+        Accepted,
+        Rejected,
+        Canceled
+    }
+    Status public status;
+    Status public maxEnum = type(Status).max;
+    Status public minEnum = type(Status).min;
 
-    function SetXdp(XdpCs x) public {
-        xdpCs = x;
+    function get() public view returns (Status){
+        return status;
+    }
+
+    function set(Status _status) public {
+        status = _status;
+    }
+
+    function cancel() public {
+        status = Status.Canceled;
+    }
+
+    function reject() public {
+        status = Status.Rejected;
+    }
+
+    function accept() public {
+        status = Status.Accepted;
+    }
+
+    function ship() public {
+        status = Status.Shipped;
+    }
+
+    function pending() public {
+        status = Status.Pending;
+    }
+
+    function reset() public {
+        delete status;
+        delete a1;
+        delete b1;
+        delete u8;
+        delete i8;
+        delete addr;
     }
 
     bool public defaultBoo; // false
@@ -157,11 +200,13 @@ contract ValueType {
     int public defaultInt; // 0
     address public defaultAddr; // 0x0000000000000000000000000000000000000000
     bytes2 public defaultBytes; // 0x0000
-    XdpCs public defaultEnum; // 0
+    Status public defaultEnum; // 0
 }
 ```
 
 ## 程序解析
+
+### 布尔类型(bool)使用的例子
 
 ```solidity
 bool public b = false;
@@ -178,7 +223,9 @@ bool public b10 = b3 || b4; // false
 bool public b11 = b1 || b3; // true,发生短路运算
 ```
 
-* 布尔类型(bool)使用的例子
+* 布尔类型(bool)运算符的使用和赋值
+
+### 整数类型(uint、int)使用的例子
 
 ```solidity
 uint8 public u8 = 18;
@@ -189,7 +236,7 @@ int24 public i24 = 1118;
 int public i256 = - 1114; // int是int256的别称
 ```
 
-* 整数类型(uint、int)使用的例子
+* 整数类型(uint、int)的赋值
 
 ```solidity
 int public minInt = type(int).min;
@@ -208,13 +255,15 @@ int public int_6 = 1118 % 1114;
 int public int_7 = 2 ** 10;
 ```
 
-* 算术运算符的例子，如果想看比较运算符的例子，可以看上面布尔类型的例子
+* 运算符的例子，如果想看运算符的例子，可以看上面`布尔类型`的例子
+
+### 地址类型(address)使用的例子
 
 ```solidity
 address public addr;
 ```
 
-* 地址类型(address)使用的例子
+* 声明了一个地址类型(address)叫`addr`
 
 ```solidity
 constructor ()payable{
@@ -222,7 +271,7 @@ constructor ()payable{
 }
 ```
 
-* 在部署合约的时候，可以向合约中转入`eth`
+* `constructor` 表示构造函数，只会在合约部署的时候，调用一次
 * 构造函数用`payable`修饰，保证部署合约的时候，能打入`eth`
 
 ```solidity
@@ -233,7 +282,9 @@ function getEth() public {
 }
 ```
 
-* 用户调用此函数，可以从合约中提取一个`ether`到自己的账户
+* 用户调用此函数，可以从合约中提取一个`ether`到自己的账户，所以部署合约的时候，一定打入一个`ether`以上，否则调用这个函数会失败
+
+### 定长数组类型(bytes)使用的例子
 
 ```solidity
 bytes1 public a1 = 0xb5; // [10110101]
@@ -241,18 +292,101 @@ bytes2 public a2 = 0xb556; // [1011010101010110]
 bytes1 public a3 = a1[0]; // [10110101]
 ```
 
-* 定长数组类型(bytes)使用的例子
+* 定长数组类型(bytes)的赋值
+
+### 枚举类型(enum)使用的例子
 
 ```solidity
-enum XdpCs {Alan, Xu, love, fyy}
-XdpCs public xdpCs;
+enum Status{
+    Pending,
+    Shipped,
+    Accepted,
+    Rejected,
+    Canceled
+}
+Status public status;
+Status public maxEnum = type(Status).max;
+Status public minEnum = type(Status).min;
+```
 
-function SetXdp(XdpCs x) public{
-xdpCs = x;
+* Status表示发货状态，并声明了status，默认值为"Pending"
+* 通过`type(Status).max` 和 `type(Status).min` ，可以得到枚举类型(enum)的最大值和最小值
+
+```solidity
+function get() public view returns (Status) {
+    return status;
 }
 ```
 
-* 枚举类型(enum)使用的例子
+* 返回值为Status类型
+  * Pending为0
+  * Shipped为1
+  * Accepted为2
+  * Rejected为3
+  * Canceled为4
+
+```solidity
+function set(Status _status) public {
+    status = _status;
+}
+```
+
+* 通过输入uint类型数字更新status变量，若大于枚举(enum)范围，会交易失败
+
+```solidity
+function cancel() public {
+    status = Status.Canceled;
+}
+```
+
+* 更新status为`Canceled`
+
+```solidity
+  function reject() public {
+    status = Status.Rejected;
+}
+```
+
+* 更新status为`Rejected`
+
+```solidity
+function accept() public {
+    status = Status.Accepted;
+}
+```
+
+* 更新status为`Accepted`
+
+```solidity
+function ship() public {
+    status = Status.Shipped;
+}
+```
+
+* 更新status为`Shipped`
+
+```solidity
+function pending() public {
+    status = Status.Pending;
+}
+```
+
+* 更新status为`Pending`
+
+### 默认值使用的例子
+
+```solidity
+function reset() public {
+    delete status;
+    delete a1;
+    delete b1;
+    delete u8;
+    delete i8;
+    delete addr;
+}
+```
+
+* 使用`delete`关键字，可以将该变量，恢复成默认值
 
 ```solidity
 bool public defaultBoo; // false
@@ -260,10 +394,10 @@ uint public defaultUint; // 0
 int public defaultInt; // 0
 address public defaultAddr; // 0x0000000000000000000000000000000000000000
 bytes2 public defaultBytes; // 0x0000
-XdpCs public defaultEnum; // 0
+Status public defaultEnum; // 0
 ```
 
-* 默认值使用的例子
+* 声明变量未赋值，变量的值是默认值
 
 ## 链接
 

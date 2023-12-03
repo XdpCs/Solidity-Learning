@@ -33,4 +33,10 @@ contract Array {
     function examples() external pure {
         uint[] memory a = new uint[](5);
     }
+    
+    string public s = "1118";
+    // 使用0.8.6编译器可能会导致编译不过
+    function stringConcat(string memory s1, string memory s2) external pure returns (string memory){
+        return string.concat(s1, s2);
+    }
 }
