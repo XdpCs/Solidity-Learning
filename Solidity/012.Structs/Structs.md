@@ -56,35 +56,6 @@ contract Todos {
 }
 ```
 
-例子2
-
-本例子是说明结构体(struct)可以声明在合约外面，并且可以被导入
-
-[StructDeclaration.sol](./StructDeclaration.sol)
-
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-    struct Todo {
-        string text;
-        bool completed;
-    }
-```
-
-[TodosStruct.sol](./TodosStruct.sol)
-
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-import "./StructDeclaration.sol";
-
-contract TodosStruct {
-    Todo[] public todos;
-}
-```
-
 ## 程序解析
 
 ### 例子1
@@ -151,26 +122,6 @@ function toggleCompleted(uint _index) public {
 ```
 
 * 更新completed
-
-### 例子2
-
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-    struct Todo {
-        string text;
-        bool completed;
-    }
-```
-
-* 结构体(struct)在文件中声明，在合约外声明
-
-```solidity
-import "./StructDeclaration.sol";
-```
-
-* 导入结构体(struct)文件
 
 ## 链接
 
