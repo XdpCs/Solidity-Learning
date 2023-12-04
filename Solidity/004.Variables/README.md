@@ -1,5 +1,9 @@
 # 004-变量
 
+## 背景
+
+通过学习`Solidity`，然后输出文章检验自己的学习成果[github仓库](https://github.com/XdpCs/Solidity-learning)
+
 ## 基础知识
 
 * 在`Solidity`中有`3`种类型的变量

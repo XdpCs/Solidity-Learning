@@ -1,5 +1,11 @@
 # 002-第一个App
 
+## 背景
+
+通过学习`Solidity`，然后输出文章检验自己的学习成果[github仓库](https://github.com/XdpCs/Solidity-learning)
+
+## 基础知识
+
 这是一个简单的计数器合约，在合约中存储一个数，你可以增加和减少此数
 
 ## 例子

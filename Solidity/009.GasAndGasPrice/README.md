@@ -1,5 +1,9 @@
 # 009-Gas和Gas价格
 
+## 背景
+
+通过学习`Solidity`，然后输出文章检验自己的学习成果[github仓库](https://github.com/XdpCs/Solidity-learning)
+
 ## 基础知识
 
 * 需要为一笔交易支付多少 `ether` ?
