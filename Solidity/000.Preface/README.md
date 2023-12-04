@@ -1,5 +1,9 @@
 # 000-序言
 
+## 背景
+
+通过学习`Solidity`，然后输出文章检验自己的学习成果[github仓库](https://github.com/XdpCs/Solidity-learning)
+
 ## 个人简介
 
 本人目前对`web3`感兴趣，学习知识需要输出，遂建立此仓库，和大家共同学习

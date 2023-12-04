@@ -1,5 +1,9 @@
 # 003-值类型
 
+## 背景
+
+通过学习`Solidity`，然后输出文章检验自己的学习成果[github仓库](https://github.com/XdpCs/Solidity-learning)
+
 ## 基础知识
 
 * 我将介绍四种在`Solidity`中可用的值类型

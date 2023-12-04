@@ -1,5 +1,9 @@
 # 006-不可变变量
 
+## 背景
+
+通过学习`Solidity`，然后输出文章检验自己的学习成果[github仓库](https://github.com/XdpCs/Solidity-learning)
+
 ## 基础知识
 
 * 不可变变量类似于`常量`，但是少了一些约束
