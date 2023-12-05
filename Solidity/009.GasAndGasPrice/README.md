@@ -56,3 +56,4 @@ function forever() external {
 ## 链接
 
 * 上一节：[008-时间单位](../008.TimeUnits/README.md)
+* 下一节：[010-映射(Mapping)](../010.Mapping/README.md)
