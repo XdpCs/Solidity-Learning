@@ -175,3 +175,4 @@ function remove(address _addr, uint _i) public {
 ## 链接
 
 * 上一节：[009-Gas和Gas价格](../009.GasAndGasPrice/README.md)
+* 下一节：[011-结构体(Struct)](../011.Structs/README.md)
