@@ -22,7 +22,7 @@
 * **008-时间单位**：[代码](./Solidity/008.TimeUnits/TimeUnits.sol) | [文章](./Solidity/008.TimeUnits/README.md) | [掘金文章](https://juejin.cn/post/7308434215812595762)
 * **009-Gas和Gas价格**：[代码](./Solidity/009.GasAndGasPrice/GasAndGasPrice.sol) | [文章](./Solidity/009.GasAndGasPrice/README.md) | [掘金文章](https://juejin.cn/post/7308434321764237322)
 * **010-映射(Mapping)**：[代码](./Solidity/010.Mapping/Mapping.sol) | [文章](./Solidity/010.Mapping/README.md) | [掘金文章](https://juejin.cn/post/7308901392470868019)
-* **011-结构体(Struct)**：[代码](./Solidity/010.Mapping/Todos.sol) | [文章](./Solidity/011.Structs/README.md) | [掘金文章](https://juejin.cn/post/7309158163941212170)
+* **011-结构体(Struct)**：[代码](./Solidity/011.Structs/Todos.sol) | [文章](./Solidity/011.Structs/README.md) | [掘金文章](https://juejin.cn/post/7309158163941212170)
 
 ## 参考资料
 
