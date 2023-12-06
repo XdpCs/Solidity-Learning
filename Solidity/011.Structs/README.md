@@ -1,17 +1,20 @@
-# 12-结构体
+# 011-结构体(Struct)
 
 ## 基础知识
 
-* 结构体是引用类型
-* 你可以通过结构体(struct)定义自己的类型
-* 结构体(struct)可以将相关数据分组在一起
-* 结构体(struct)可以声明在合约外面并从其他合约中导入
+* 结构体(Struct)是`引用类型`
+* 你可以通过结构体(Struct)定义自己的类型
+* 结构体(Struct)可以将相关数据分组在一起
+* 结构体(Struct)可以声明在合约外面并从其他合约中导入
+* 结构体(Struct)无法包含其自身类型
+* 结构体(Struct)中，若成员变量存在引用类型，建议使用`storage`获取该结构体的引用，以防止引用类型的数据丢失
+* 结构体(Struct)有三种初始化的方法，会在下文的例子中讲到
 
 ## 例子
 
-[例子1](./Todos.sol)
+[例子](./Todos.sol)
 
-该例子是通过使用结构体(struct)存储待办事项的例子
+该例子是通过使用结构体(Struct)存储待办事项的例子
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -58,8 +61,6 @@ contract Todos {
 
 ## 程序解析
 
-### 例子1
-
 ```solidity
 struct Todo {
     string text;
@@ -67,34 +68,34 @@ struct Todo {
 }
 ```
 
-* 待办事项的结构体(struct)
+* 待办事项的结构体(Struct)
 
 ```solidity
 Todo[] public todos;
 ```
 
-* Todo结构体(struct)数组
+* Todo结构体(Struct)数组
 
 ```solidity
-    function createOneWay(string memory _text) public {
+function createOneWay(string memory _text) public {
     todos.push(Todo(_text, false));
 }
 
-    function createTwoWay(string memory _text) public {
-        todos.push(Todo({text : _text, completed : false}));
-    }
+function createTwoWay(string memory _text) public {
+    todos.push(Todo({text : _text, completed : false}));
+}
 
-    function createThreeWay(string memory _text) public {
-        Todo memory todo;
-        todo.text = _text;
-        todos.push(todo);
-    }
+function createThreeWay(string memory _text) public {
+    Todo memory todo;
+    todo.text = _text;
+    todos.push(todo);
+}
 ```
 
-* 三种方法初始化一个结构体(struct)
-    * function createOneWay(string memory _text)像函数调用一样初始化
-    * function createTwoWay(string memory _text)像键值对映射一样初始化
-    * function createThreeWay(string memory _text)，初始化一个结构体(struct)变量，然后对其进行赋值
+* 三种方法初始化一个结构体(Struct)
+  * `Todo(_text, false)`，像函数调用一样初始化，这种方式不推荐，因为如果在结构体中间新增一个新的变量，所有初始化函数都需要改
+  * `Todo({text : _text, completed : false})`，像键值对映射一样初始化，强烈推荐
+  * `Todo memory todo`初始化一个结构体(Struct)变量，然后对其进行赋值
 
 ```solidity
 function get(uint _index) public view returns (string memory text, bool completed){
@@ -125,5 +126,4 @@ function toggleCompleted(uint _index) public {
 
 ## 链接
 
-* 上一节：[11-枚举](../EnumDemo/Enum.md)
-* 下一节：[13-映射](../Mapping/Mapping.md)
+* 上一节：[010-映射(Mapping)](../010.Mapping/README.md)
