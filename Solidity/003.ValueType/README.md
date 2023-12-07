@@ -10,7 +10,7 @@
   * 布尔类型(bool)
   * 整数类型(uint、int)
   * 地址类型(address)
-  * 定长数组类型(bytes)
+  * 定长字节数组类型(bytes)
   * 枚举类型(enum)
 
 ### 布尔类型(bool)
@@ -56,7 +56,7 @@
   * 普通地址（address）：可以调用`call`, `delegatecall` 和 `staticcall`成员方法
   * payable address: 比普通地址多了`transfer`和`send`两个成员方法用于转账，和一个成员变量`balance`用于查询余额
 
-### 定长数组类型(bytes)
+### 定长字节数组类型(bytes)
 
 * `bytes`表示一个字节序列
 * `Solidity`提供了两种字节类型：
@@ -90,7 +90,7 @@
   * `布尔类型(bool)`为`false`
   * `整数类型(uint、int)`为`0`
   * `地址类型(address)`为`0x0000000000000000000000000000000000000000`
-  * `定长数组类型(bytes)`为`0`，根据长度决定，比如`bytes2`为`0x0000`
+  * `定长字节数组类型(bytes)`为`0`，根据长度决定，比如`bytes2`为`0x0000`
   * `枚举类型(enum)`为`0`
 
 ## 例子
@@ -288,7 +288,7 @@ function getEth() public {
 
 * 用户调用此函数，可以从合约中提取一个`ether`到自己的账户，所以部署合约的时候，一定打入一个`ether`以上，否则调用这个函数会失败
 
-### 定长数组类型(bytes)使用的例子
+### 定长字节数组类型(bytes)使用的例子
 
 ```solidity
 bytes1 public a1 = 0xb5; // [10110101]
@@ -296,7 +296,7 @@ bytes2 public a2 = 0xb556; // [1011010101010110]
 bytes1 public a3 = a1[0]; // [10110101]
 ```
 
-* 定长数组类型(bytes)的赋值
+* 定长字节数组类型(bytes)的赋值
 
 ### 枚举类型(enum)使用的例子
 

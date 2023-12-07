@@ -1,5 +1,9 @@
 # 010-映射(Mapping)
 
+## 背景
+
+通过学习`Solidity`，然后输出文章检验自己的学习成果[github仓库](https://github.com/XdpCs/Solidity-learning)
+
 ## 基础知识
 
 * 创建映射(Mapping)的语法是`mapping(KeyType KeyName? => ValueType ValueName?) VariableName`，也可以写成`mapping(KeyType => ValueType)`
