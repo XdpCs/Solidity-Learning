@@ -2,7 +2,9 @@
 
 ## 背景
 
-通过学习`Solidity`，然后输出文章检验自己的学习成果[github仓库](https://github.com/XdpCs/Solidity-learning)
+通过学习`Solidity`，然后输出文章检验自己的学习成果[Github仓库](https://github.com/XdpCs/Solidity-learning)
+
+欢迎大家关注我的[X](https://twitter.com/CsXdp)
 
 ## 个人简介
 
