@@ -11,7 +11,7 @@
 
 ### 基础知识
 
-* **000-序言** ：[文章](https://github.com/XdpCs/Solidity-Learning/tree/master/Solidity/000.Preface/README.md)
+* **000-序言** ：[文章](./Solidity/000.Preface/README.md)
 * **001-你好，世界**：[代码](https://github.com/XdpCs/Solidity-Learning/tree/master/Solidity/001.HelloWorld/HelloWorld.sol) [文章](./Solidity/001.HelloWorld/README.md)
 * **002-第一个App**：[代码](https://github.com/XdpCs/Solidity-Learning/tree/master/Solidity/002.FirstApp/Counter.sol) [文章](./Solidity/002.FirstApp/README.md)
 * **003-值类型**：[代码](https://github.com/XdpCs/Solidity-Learning/tree/master/Solidity/003.ValueType/ValueType.sol) [文章](./Solidity/003.ValueType/README.md)
