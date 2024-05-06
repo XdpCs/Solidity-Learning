@@ -8,7 +8,9 @@
 
 该例子是在链上存储`"Hello World!"`的字符串
 
-[例子](./HelloWorld.sol)
+[例子](https://github.com/XdpCs/Solidity-Learning/blob/master/Solidity/001.HelloWorld/HelloWorld.sol)
+
+[arb 合约地址](https://arbiscan.io/address/0x13f716b0eeee02fc79420cfcc3ed9bfc4f72aa0c)
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -26,7 +28,7 @@ contract HelloWorld {
 ```
 
 * 如果不加此行，编译的时候，编译器会警告，但程序可以编译成功
-* 如果你不想指定一个许可证，或者源代码不开源，请使用特殊值`UNLICENSED`
+* 如果你不想指定一个许可证或者源代码不开源，可以使用特殊值`UNLICENSED`
 * 注意，UNLICENSED(不存在于SPDX许可证列表中)与UNLICENSE(授予所有人所有权利)不同
 * 每个源文件都应该注释最上面一行，以说明版权许可证
 * 版权注释在文件的任何位置都可以被编译器识别，但建议把它放在文件的顶部
