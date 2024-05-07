@@ -1,5 +1,11 @@
 # 001-你好，世界
 
+## 背景
+
+通过学习`Solidity`，然后输出文章检验自己的学习成果[Github仓库](https://github.com/XdpCs/Solidity-Learning)
+
+欢迎大家关注我的[X](https://twitter.com/CsXdp)
+
 ## 基础知识
 
 任何一个程序教学，开头都会教你如何写`Hello World`，我也不例外
