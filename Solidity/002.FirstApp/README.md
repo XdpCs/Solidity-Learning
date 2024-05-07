@@ -8,13 +8,13 @@
 
 ## 基础知识
 
-这是一个简单的计数器合约，在合约中存储一个数，你可以增加和减少此数
+这是一个简单的计数器合约，在合约中存储一个数，你可以增加或减少此数
 
 ## 例子
 
 该例子是一个链上计数器合约
 
-[例子](./Counter.sol)
+[例子](https://github.com/XdpCs/Solidity-Learning/blob/master/Solidity/002.FirstApp/Counter.sol)
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -43,7 +43,7 @@ contract Counter {
 uint public count;
 ```
 
-* 存储在链上合约中的`count`变量,用`public`修饰可见性，在后面可以知道，`public`修饰的变量，会自动生成一个`get函数`
+* `count`是 存储在链上合约中的变量,用`public`修饰可见性，在后面章节可以知道，`public`修饰的变量，会自动生成一个`get函数`
 
 ```solidity
 function getCount() public view returns (uint) {
