@@ -16,6 +16,8 @@
 
 [例子](https://github.com/XdpCs/Solidity-Learning/blob/master/Solidity/002.FirstApp/Counter.sol)
 
+[arb 合约地址](https://arbiscan.io/address/0xea4775533e92975f92f525b6201f3c443d2c73da)
+
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
